@@ -9,11 +9,11 @@ public class PostmanEchoTests {
 
         given()
                 .baseUri("https://postman-echo.com")
-                .body("21.11.1992")
+                .body("21.11.1900")
                 .when()
                 .post("/post")
-                .then()
+                .then().log().all()
                 .statusCode(200)
-                .body("Data", equalTo("21.11.1992"));
+                .body("data", equalTo("21.11.1992"));
     }
 }
