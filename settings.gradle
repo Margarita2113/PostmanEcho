@@ -1,0 +1,3 @@
+rootProject.name = 'Postman_Echo'
+include 'artifacts'
+
